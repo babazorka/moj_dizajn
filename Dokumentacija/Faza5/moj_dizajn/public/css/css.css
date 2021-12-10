@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    display: grid;
+}
+
+html{
+    background-color: white;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 960px 1fr;
+    grid-template-areas: ". telo_grid-template .";
+}
+
+.grid_header_and_body{ /*layer_0*/
+    grid-area: telo_grid-template;
+    background-color: #C0CCA3;
+    display: grid;
+    grid-template-rows: 5fr 14fr;
+    width: 100%;
+    height: 736px;
+    padding-right: 15px;
+}
+
+.grid_header{ /*layer_1_1*/
+    display: grid;
+    grid-template-columns: 18fr 30fr 11fr;
+    margin-top: 20px;
+    margin-bottom: 11px;
+    margin-left: 27px; 
+}
+
+.grid_content{
+    display: grid;
+    margin-top: 9px;
+    margin-bottom: 15px;
+    margin-left: 27px; 
+}
+
+.grid_content_left{ /* <- grid_content */
+    display: grid;
+    grid-template-columns: 6fr 23fr;
+}
+
+.grid_content_half{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #899176;
+}
+
+.grid_content_dessigner{
+    display: grid;
+    grid-template-rows: 10% 50% 10% 30%;  
+}  
+.grid_content_dessigner_up{
+    display: grid;
+    grid-template-columns: 3fr 1fr 6fr;  
+}
+
+
+.layer_pretraga_dizajniraj{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.logo{
+    background-color: white;
+    margin-right: 16px;
+}
+
+.layer_prijava_registracija{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 15px;
+}
+
+.layer_pretraga_pretraga_box{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    margin-bottom: 19px;
+}
+.layer_pretraga_pretraga_box_2{
+    display: grid;
+    /* grid-template-columns: 5fr 1fr; */
+    margin-bottom: 19px;
+}
+
+
+.pretraga{
+    background-color: #afafaf;
+}
+
+.pretraga_box{
+    background-color: #afafaf;
+    margin-left: 20px;
+}
+
+.dizajniraj{
+    background-color: #389472;
+    margin-top: 9px;
+}
+
+.prijava{
+    background-color:#DF5F61;
+    margin-bottom: 23px;
+}
+
+.registracija{
+    background-color:#DF5F61;
+    margin-top: 23px;
+    
+}
+
+.lista_dizajnera{
+    background-color: #afafaf;
+    margin-right: 12.5px ;    
+
+}
+
+.galerija{
+    margin-left: 12.5px ;  
+    background-color: #899176;
+    
+}
+
+
+td {
+    padding: 15px;
+}
+
+.submit{
+    background-color: lightgreen;
+    font-weight: bold;
+    width: 100px;
+    height: 35px;
+    border: green solid;
+    border-radius: 5px;
+}
+
+/* input[type=text] , input[type=password]{
+  width: 100%;
+  padding: 2px 20px;
+  box-sizing: border-box;
+  border: 2px solid lightgreen;
+  border-radius: 4px;
+} */
+
+.upravljanje{
+        font-family: Arial;
+        border-collapse: collapse;
+        width: 95%;
+        margin-top: 20px;
+        margin-left: 40px;
+      }
+      
+      .upravljanje td, .upravljanje th {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      
+      .upravljanje tr:nth-child(even){background-color: white}
+      
+      .upravljanje tr:hover {background-color: #ddd;}
+      
+      .upravljanje th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #DF5F61;
+        color: white;
+      
+}
+
+.grid_content_dessigner_up_left{
+    display: grid;
+    grid-template-rows: 50%;  
+}
+
+.card{
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  max-width: 180px;
+  max-height: 180px;
+  margin-left: 40px;
+  margin-top: 15px;
+  color: white;
+}
+
+.middle {
+    margin-right: 5px;
+ 
+}
+
+.right {
+    margin-left: 100px;
+    background-color: white;
+}
+
+.designer_photos
+{
+    margin-top: 15px;
+    margin-left: 40px;
+     background-color: white;
+     margin-bottom : 15px;
+}
+
+.grades
+{
+    margin-left: 40px;
+      background-color: white;
+      margin-top: 20px;
+      max-width: 180px;
+}
+
+.text1{
+    display: grid;
+    grid-template-columns:  50% 50%;  
+    background-color: pink;
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+}
+
+.text2{
+    display: grid;
+    grid-template-columns:  50% 50%;  
+    background-color: pink;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.dugme {
+    height: 40px;
+    /* width: 177px; */
+    background-color: #DF5F61;
+}
+
+/* <<<<<<< HEAD
+
+/* duggme*/
+
+
+.search {
+    /* Roundness */
+    border: 1px solid #BABABA;
+    border-radius: 20px;
+    height: 35px;
+    width: 400px;
+    padding: 8px;
+
+    background: white;
+
+    /* Fonts and text */
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #7A7A7A;
+
+    /* box-shadow: 1px 5px 2px #EDEDED; */
+}
+
+.search:hover {
+    background: #FCFCFC;
+}
+
+.search:focus {
+    outline: none;
+    background: #FFFFFF;
+    border-color: #7AB0E6;
+}
+
+#mglass {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+#table-scroll{
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.my_profile_gallery{
+    width: 880px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.scroll_designer{
+    /* width: 177px; */
+    height: 526px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+  #table-scroll {
+    height:500px;
+    overflow-y:auto;
+    overflow-x: hidden;  
+  }
+  
+  .alert alert-danger
+  {
+      color: red;
+  }
+  

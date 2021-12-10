@@ -1,0 +1,4 @@
+function alo(){
+    alert("alo");
+}
+

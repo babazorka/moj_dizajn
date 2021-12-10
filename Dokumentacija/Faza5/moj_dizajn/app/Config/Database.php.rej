@@ -1,0 +1,10 @@
+diff a/Dokumentacija/Faza5/moj_dizajn/app/Config/Database.php b/Dokumentacija/Faza5/moj_dizajn/app/Config/Database.php	(rejected hunks)
+@@ -34,7 +34,7 @@
+ 		'DSN'      => '',
+ 		'hostname' => 'localhost',
+ 		'username' => 'root',
+-		'password' => '',
++		'password' => '999999999',
+ 		'database' => 'moj_dizajn', 
+ 		'DBDriver' => 'MySQLi',
+ 		'DBPrefix' => '',
